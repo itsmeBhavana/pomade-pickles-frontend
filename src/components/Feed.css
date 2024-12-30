@@ -1,5 +1,4 @@
 .feed {
-  width: 100%;
   max-width: 1200px; /* Optional: Limits the max width of the feed */
   margin: 0 auto; /* Center the feed on larger screens */
   padding: 1rem;

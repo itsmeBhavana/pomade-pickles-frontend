@@ -7,7 +7,11 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <img src="/logo.png" alt="logo" className="logo" />
-        <h1 className="store-title">Momade Pickles</h1>
+        <h1 className="store-title">
+          Momade
+          <br />
+          Pickles
+        </h1>
       </div>
       <div className="nav-container">
         <nav>
