@@ -1,0 +1,86 @@
+.feed {
+  width: 100%;
+  max-width: 1200px; /* Optional: Limits the max width of the feed */
+  margin: 0 auto; /* Center the feed on larger screens */
+  padding: 1rem;
+  background: #f5f5dc;
+}
+
+.category-section {
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e31e23;
+  text: center;
+}
+
+.pickle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  box-sizing: border-box; /* Ensures padding doesn't overflow the container */
+}
+
+.pickle-card {
+  background-color: #f5f5dc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding is within card boundaries */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden; /* Prevents content from flowing outside card */
+}
+
+.pickle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pickle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.pickle-card h3 {
+  font-size: 1.25rem;
+  color: #e31e23;
+}
+
+.pickle-card p {
+  font-size: 0.875rem;
+  color: #e31e23;
+}
+
+.text-green-700 {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .feed {
+    padding: 1rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pickle-card h3 {
+    font-size: 1rem;
+  }
+
+  .pickle-card p {
+    font-size: 0.75rem;
+  }
+}
