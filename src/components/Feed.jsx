@@ -11,7 +11,7 @@ const Feed = () => {
     const fetchPickles = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.REACT_APP_BACKEND_URL}/api/v1/pickles`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/pickles`,
           { withCredentials: true }
         );
         setPickles(data.data);
