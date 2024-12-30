@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "env": {
+      "VITE_BACKEND_URL": "https://pomade-pickles-backend.onrender.com"
+    }
+  }
+}
